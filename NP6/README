@@ -1,0 +1,21 @@
+Output: Once a user starts the chat client, they are to enter a nickname. After that, they can pick a room to join.
+	Once that nickname is entered both of those are entered, they are announced in the chat to every
+	other connected client (the first connected client gets a message stating that they are the first client). 
+	Likewise happens when they disconnect. After this, they are free to either type a message in the chat by prefacing 
+	each input with 'C' or change their nickname with 'N'. Both these will be broadcasted to every other connected client.
+
+1. Copy the files to your own directory.
+
+2. Modify inet.h to reflect the host you are currently logged into.
+   Also, modify the port numbers to be used to reduce the likelihood
+   of conflicting with another server.
+
+3. Compile the source code using the command: make
+
+4. Start the server in the background: ./directoryServer2 &
+
+5. Start the room: ./chatServer2 "KSU Football" 9191
+
+5. Start the client on the same or another host in the foreground: ./chatClient2
+
+6. Remember to kill the server before logging off.
